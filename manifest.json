@@ -1,6 +1,20 @@
 {
-  "name": "Ctrl-Shift",
-  "version": "1.0",
-  "manifest_version": 2,
-  "description": "An experimental keyboard-based navigation extension for Google Chrome.",
+	"name": "Ctrl-Shift",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "An experimental keyboard-based navigation extension for Google Chrome.",
+	"content_scripts": 
+	[
+		{
+			"matches": 
+			[
+				"http://*/*",
+				"https://*/*"
+			],
+			"js":
+			[
+				"alert.js"
+			]
+		}
+	]
 }
